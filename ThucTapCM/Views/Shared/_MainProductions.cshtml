@@ -1,0 +1,23 @@
+﻿@model List<ThucTapCM.Models.Admin.EntitiesFW.SanPham>
+
+@foreach (var item in Model)
+{
+    <div class="col-lg-4 col-md-6">
+        <div class="product-item">
+            <a href="car-details.html"><img src="~/Content/Client/assets/images/@item.HinhAnh" alt=""></a>
+            <div class="down-content">
+                <a href="car-details.html"><h4>@item.TenSP</h4></a>
+
+                <h6><small><del> @item.DonGiaCu</del></small> @item.DonGia</h6>
+
+                <p>190 hp &nbsp;/&nbsp; Petrol &nbsp;/&nbsp; 2008 &nbsp;/&nbsp; Used vehicle</p>
+
+                <small>
+                    <strong title="Author"><i class="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong title="Author"><i class="fa fa-cube"></i> 1800cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong title="Views"><i class="fa fa-cog"></i> Manual</strong>
+                </small>
+            </div>
+        </div>
+    </div>
+}
